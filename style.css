@@ -1,0 +1,227 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+@font-face {
+  font-family: tt-norms-pro;
+  src: url(fonts/TT\ Norms\ Pro\ Regular.otf);
+}
+
+
+
+body{
+  margin:0;
+  font-family: tt-norms-pro, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:#000000;
+  line-height:1.6;
+}
+
+#showcase{
+  background-image:url(images/Rectangle1.png);
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding:500px;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+  padding-bottom:100px;
+}
+
+#showcase h1{
+  line-height:1.2;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+
+#showcase p{
+  font-size:16px;
+  max-width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  line-height:normal;
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+#showcase .button{
+  font-size:18px;
+  text-decoration:none;
+  color:#000000;
+  background-color: #FFBC11;
+  padding: 10px 30px;
+  border-radius:10px;
+  margin-top:20px;
+
+}
+
+#showcase .button:hover{
+  background:#c4900e;
+  color:#000000;
+}
+
+#section-a{
+  padding: 20px;
+  background:#FEFEFE;
+  color:#303030;
+  text-align:center;
+  
+
+}
+
+.sauna-image {
+  max-height: 600px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  padding-bottom: 40px;
+
+}
+
+.column {
+  float: left;
+  width: 260px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:40px;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  gap: 20px;
+  padding-bottom:50px;
+}
+
+.column p {
+ font-size:22px;
+ font-weight:bold;
+ padding-bottom:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+.column-2 {
+  float: left;
+  width: 33.33%;
+  padding:5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#section-b{
+  padding:20px;
+  background:#f4f4f4;
+  text-align:center;
+}
+
+#section-c{
+  display:flex;
+}
+
+#section-c div{
+  padding:20px;
+}
+
+#section-c .box-1, #section-c .box-3{
+  background:#926239;
+  color:#fff;
+}
+
+#section-c .box-2{
+  background:#f9f9f9;
+}
+
+@media (min-width: 800px) {
+  #showcase h1 {
+      font-size: 5vw;
+    }
+  #showcase p {
+      font-size: 2vw;
+      
+    }
+  }
+ 
+
+  @media screen and (max-width: 800px) {
+    #showcase h1 {
+      font-size: 34px;
+    }
+    #showcase p {
+      font-size: 18px; 
+      }
+  }
+    @media screen and (max-width: 600px) {
+.sauna-image {
+  max-width: 80vw;
+}
+    }
+    @media screen and (max-width: 930px) {
+       .column p{
+        font-size: 19px;
+      }
+      .column p2 {
+        font-size: 17px; 
+      }
+      .column {
+        width: 300px;
+max-width: 200px;  
+padding-left:10px;
+padding-right:10px; 
+      }
+    }    
+
+    @media screen and (max-width: 700px) {
+      .column { 
+        max-width: 180px;
+      }
+    }
+
+    @media screen and (max-width: 570px) {
+      .column {
+        max-width: 80vw;
+        width: 100%;
+padding-left:35px;
+
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+    .column-2 {
+      width: 70%;
+      padding:5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+
+  }
